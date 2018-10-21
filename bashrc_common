@@ -1,0 +1,46 @@
+# Add system scripts to the path
+PATH=${PATH}:/opt/scripts
+
+# Set up the use command with tab completion
+source /opt/scripts/use.sh setup
+
+# Wrap apt to keep track of all user-installed packages 
+# (only useful on debian-like systems. ex: Ubuntu or Mint)
+alias apt="/opt/scripts/apt_history.sh"
+
+# Wrap pacman to keep track of all user-installed packages
+# (only useful on arch-related distros. ex: Manjaro)
+alias pacman="/opt/scripts/pacman_history.sh"
+
+# Make sudo use my alias'
+alias sudo='sudo '
+
+###############
+# COMMON ALIAS'
+###############
+
+# Navigation
+alias u="cd .."
+alias uu="u;u"
+alias uuu="uu;u"
+alias uuuu="uuu;u"
+alias uuuuu="uuuu;u"
+alias uuuuuu="uuuuu;u"
+alias uuuuuuu="uuuuuu;u"
+alias uuuuuuuu="uuuuuuu;u"
+alias uuuuuuuuu="uuuuuuuu;u"
+alias uuuuuuuuuu="uuuuuuuuu;u"
+
+# tcsh emulation 
+alias which="type -a"
+
+
+#####################
+# DEFAULT ENVIRONMENT
+#####################
+
+# Use my apps
+use chrome
+use blender-2.79
+use clarisse-3.6
+use unity-2017.3.0p2
