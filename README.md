@@ -17,5 +17,13 @@ Note: It is critical that this tool NOT have write permissions for anyone other 
 the code could be modified to run malware and the end-user (using sudo) would not be aware that running pacman (or apt) is
 actually running unauthorized code.
 
+# apt_history.sh
+This script is a wrapper for package_manager_history.sh. It merely sets the command that that script will run (apt) and the
+path where that script will store the history. On my system I have aliased apt to this script.
+
+# pacman_history.sh
+This script is a wrapper for package_manager_history.sh. It merely sets the command that that script will run (pacman) and the
+path where that script will store the history. On my system I have aliased pacman to this script.
+
 # bashrc_common
 These are just my common bashrc commands (that I want set up for every user on the system).
